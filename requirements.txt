@@ -1,5 +1,5 @@
 
-streamlit
+streamlit==1.45.1
 pycaret==3.3.2
-pandas
-plotly
+pandas==2.2.2
+plotly==6.0.1
