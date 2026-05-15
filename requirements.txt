@@ -1,5 +1,5 @@
 json
 streamlit
-pycaret 
+pycaret.clustering 
 pandas
 plotly.express 
