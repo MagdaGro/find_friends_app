@@ -32,6 +32,8 @@ def get_all_participants():
     return df_with_clusters
 
 st.title("Znajdź znajomych")
+st.image("images/find friends graphic.png")
+
 
 with st.sidebar:
     st.header("Powiedz nam coś o sobie")
@@ -64,7 +66,7 @@ same_cluster_df = all_df[all_df["Cluster"]== predicted_cluster_id]
 st.metric("Liczba twoich znajomych", len(same_cluster_df))
 
 st.header("Osoby z grupy")
-fig = px.histogram(same_cluster_df.sort_values("age"), x = "age")
+fig = px.histogram(same_cluster_df.sort_values("age"), x = "age",color_discrete_sequence=px.colors.qualitative.Pastel)
 fig.update_layout(
     title = "Rozkład wieku w grupie",
     xaxis_title = "Wiek",
@@ -73,7 +75,7 @@ fig.update_layout(
 )
 st.plotly_chart(fig)
 
-fig = px.histogram(same_cluster_df, x ="edu_level")
+fig = px.histogram(same_cluster_df, x ="edu_level", color_discrete_sequence=px.colors.qualitative.Bold)
 fig.update_layout(
     title = "Rozkład wykształcenia w grupie",
     xaxis_title = "Wykształcenie",
@@ -81,7 +83,7 @@ fig.update_layout(
 )
 st.plotly_chart(fig)
 
-fig =  px.histogram(same_cluster_df, x= "fav_animals")
+fig =  px.histogram(same_cluster_df, x= "fav_animals",color_discrete_sequence=px.colors.qualitative.Set2)
 fig.update_layout(
     title = "Rozkład ulubionych zwierząt w grupie",
     xaxis_title = "Ulubione zwierzęta",
@@ -89,7 +91,7 @@ fig.update_layout(
 )
 st.plotly_chart(fig)
 
-fig = px.histogram(same_cluster_df, x = "fav_place")
+fig = px.histogram(same_cluster_df, x = "fav_place", color_discrete_sequence=px.colors.qualitative.Set1)
 fig.update_layout(
     title = "Rozkład ulubionych miejsc w grupie",
     xaxis_title = "Ulubione miejsce",
@@ -97,7 +99,7 @@ fig.update_layout(
 )
 st.plotly_chart(fig)
 
-fig = px.histogram(same_cluster_df, x = "gender")
+fig = px.histogram(same_cluster_df, x = "gender", color_discrete_sequence=px.colors.qualitative.Dark24)
 fig.update_layout(
     title = "Rozkład płci w grupie",
     xaxis_title = "Płeć",
