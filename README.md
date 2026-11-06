@@ -83,4 +83,4 @@ It provided practical experience in building an interactive Python application, 
 
 👩‍💻 Author
 
-Created as a personal educational project while developing practical skills in Python and Data Science.
+Created by MagdaGro as a personal educational project while developing practical skills in Python and Data Science.
