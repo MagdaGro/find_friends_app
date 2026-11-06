@@ -1,10 +1,10 @@
-Find Friends App 🧩
+Find Friends App 
 
 An interactive web application that helps users discover groups of people with similar interests and preferences using Machine Learning clustering.
 
 The app collects a few user preferences, assigns the user to a group using a pre-trained clustering model, and presents insights about that group through interactive visualizations.
 
-✨ Features
+ Features
 
 User preferences form – enter information such as age, education, favorite animals, preferred places and gender.
 
@@ -16,7 +16,7 @@ Interactive visualizations – explore group distributions through charts.
 
 Data processing – load and process data from CSV and JSON files.
 
-🛠️ Technologies
+ Technologies
 
 Python – application logic
 
@@ -30,7 +30,7 @@ Plotly Express – interactive data visualizations
 
 CSV / JSON – data storage and input formats
 
-⚙️ How It Works
+ How It Works
 
 The user enters their preferences in the application.
 
@@ -42,7 +42,7 @@ The application displays the assigned group and the number of people belonging t
 
 Interactive charts provide an overview of the group's characteristics, such as age, education, favorite animals, preferred places and gender.
 
-🚀 Getting Started
+ Getting Started
 
 Prerequisites
 
@@ -54,7 +54,7 @@ Installation
 
 Clone the repository:
 
-git clone <https://github.com>
+git clone <https://github.com/MagdaGro/find_friends_app.git>
 cd <find_friends_app>
 
 Install the required dependencies:
@@ -69,18 +69,18 @@ streamlit run app.py
 
 Open the local URL displayed in your terminal to use the application.
 
-📊 Example Use Case
+ Example Use Case
 
 A user enters their preferences, including age, education level, favorite animals and preferred places.
 
 The application uses the pre-trained clustering pipeline to identify a group with similar characteristics. The user can then explore the group's profile through interactive charts and statistics.
 
-🎓 Project Background
+ Project Background
 
 This project was developed as part of my learning journey in Python, Data Science and Artificial Intelligence.
 
 It provided practical experience in building an interactive Python application, working with structured data, integrating a pre-trained Machine Learning model and presenting results through data visualizations.
 
-👩‍💻 Author
+ Author
 
 Created by MagdaGro as a personal educational project while developing practical skills in Python and Data Science.
