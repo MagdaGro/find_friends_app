@@ -54,8 +54,8 @@ Installation
 
 Clone the repository:
 
-git clone <YOUR_REPOSITORY_URL>
-cd <YOUR_PROJECT_DIRECTORY>
+git clone <https://github.com>
+cd <find_friends_app>
 
 Install the required dependencies:
 
